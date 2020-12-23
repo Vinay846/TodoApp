@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Ubuntu:wght@300&display=swap');
+body {
+	height: 100%;
+	margin: 0;
+	background-color: whitesmoke;
+	font-family: 'Bungee Outline', cursive;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.bg-pink {
+	background-color: pink;
+}
+
+#task {
+	height: 50px;
+	width: 509px;
+	display: block;
+}
+
+#textandbtn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+#listItem {
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 19px;
+}
+
+#taskName {
+	flex-basis: 30%;
+}
+
+.editTask {
+	flex-basis: 37%;
+}
+
+.login {
+	width: 280px;
+	height: 360px;
+	gap: 10px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.error {
+	color: red;
+	font-size: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.container {
+	min-height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input,
+.editTask,
+#task {
+	background-color: #f8f8f8;
+	padding: 15px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	outline: none;
+}
+
+.btn {
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+	background-color: #3897f1;
+	color: white;
+	outline: none;
+	transition: background-color .5s;
+	cursor: pointer;
+	width: 70%;
+}
+
+.saveTask,
+.edit,
+.delete,
+.add,
+.btn:focus {
+	background-color: #c3e0fa;
+}
+
+.saveTask,
+.edit,
+.delete,
+.add {
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+	background-color: #3897f1;
+	color: white;
+	outline: none;
+	transition: background-color .5s;
+	cursor: pointer;
+	width: 90px;
+}
+
+.dropdown li {
+	padding: 2px 12px;
+	text-decoration: none;
+	display: block;
+	border-radius: 5px;
+	width: 50px;
+	background-color: #e6e4e4;
+}
+
+.logout {
+	font-weight: bold;
+	color: #27aedb;
+	cursor: pointer;
+}
+
+.profile {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+
+.dropdown li:hover {
+	background-color: #ddd;
+}
+
+.dropdown {
+	position: absolute;
+
+	z-index: 1;
+}
+
+.calculation {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.Total, .uncompleted, .completed {
+	border-radius: 5px;
+	margin: 15px;
+	font-weight: bolder;
+	font-size: large;
+
+}
+.completed {
+	color: green;
+
+}
+
+.uncompleted {
+	color: red;
+}
+
+.loading {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 2;
+}
+
+.c-loader {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.crud-loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.delete:hover {
+	background-color: #bb2124;
+}
+
+.saveTask:hover{
+	background-color: #22bb33;
+}
+.edit:hover{
+	background-color: #f0ad4e;
+	color: black;
+}
+.add:hover{
+	background-color: #22bb33;
+}
